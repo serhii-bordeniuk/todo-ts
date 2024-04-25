@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+input:checked+span {
+    text-decoration: line-through;
+  }
+
+.btn {
+    width: 150px;
+    height: 35px;
+    background-color: #1976d2;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #067df3;
+    }
+}
+
+.layout {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    .navigation {
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.todoList {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+    .todoItem {
+        font-size: 1rem;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+
+    }
+}
+
+.newTodoForm {
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-start;
+
+    .inputWrapper {
+        width: 100%;
+        .formInput {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
